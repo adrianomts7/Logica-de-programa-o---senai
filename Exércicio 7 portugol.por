@@ -1,16 +1,16 @@
 programa {
   funcao inicio() {
     // Declarando variaveis
-    inteiro primeiroNumero, segundoNumero, soma, produto, valorMaior, valorMenor
+    inteiro primeiroNumero, segundoNumero, soma, produto
     real media
     // Pedindo dados ao usuario
-    escreva("Escreva o primeiro n˙mero: ")
+    escreva("Escreva o primeiro n√∫mero: ")
     leia(primeiroNumero)
     
-    escreva("Escreva o Segundo N˙mero: ")
+    escreva("Escreva o Segundo N√∫mero: ")
     leia(segundoNumero)
 
-    // Fazendo os calculos necÈssarios
+    // Fazendo os calculos nec√©ssarios
       soma = (primeiroNumero + segundoNumero)
       produto = (primeiroNumero * segundoNumero)
       media = (primeiroNumero + segundoNumero) / 2
@@ -21,12 +21,12 @@ programa {
     escreva("\nAs medias dos valores ",  media)
 
     se (primeiroNumero == segundoNumero)
-      escreva("\nOs Valores s„o iguais")
+      escreva("\nOs Valores s√£o iguais")
     
     senao se(primeiroNumero > segundoNumero)
-      escreva("\nO Maior valor digitado foi ", primeiroNumero, "\n … o menor valor foi ", segundoNumero)
+      escreva("\nO Maior valor digitado foi ", primeiroNumero, "\n √â o menor valor foi ", segundoNumero)
 
     senao
-      escreva("\nO Maior valor digitado foi ", segundoNumero, " \n… o menor valor foi ", primeiroNumero)
+      escreva("\nO Maior valor digitado foi ", segundoNumero, " \n√â o menor valor foi ", primeiroNumero)
   }
 }

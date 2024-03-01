@@ -13,7 +13,7 @@ programa {
 
     // Respondendo ao usuario
     se (idade 18 > idade < 65)
-      escreva(nome, "Seu voto é o obrigatorio")
+      escreva(nome, "Seu voto é obrigatorio")
     
     senao 
       escreva(nome, "Voc~e não tem idade suficiente para votar")

@@ -4,7 +4,7 @@ programa {
     cadeia nome
     inteiro idade
 
-    // Solicitando dados ao usu·rio
+    // Solicitando dados ao usu√°rio
     escreva("Qual o seu Nome: ")
     leia(nome)
 
@@ -12,10 +12,10 @@ programa {
     leia(idade)
 
     // Respondendo ao usuario
-    se (idade < 16)
-      escreva(nome, "VocÍ n„o tem idade suficiente para votar")
+    se (idade 18 > idade < 65)
+      escreva(nome, "Seu voto √© o obrigatorio")
     
-    senao se (18 > idade < 65)
-      escreva(nome, " Seu voto È obrigatorio")
+    senao 
+      escreva(nome, "Voc~e n√£o tem idade suficiente para votar")
     }
 }

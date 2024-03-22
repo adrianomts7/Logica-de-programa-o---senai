@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <ctype.h>
+#include <locale.h>
 
 int main(){
-	
+	setlocale(LC_ALL,"");
 	float altura, pesoIdeal;
 	char sexo;
 	
@@ -10,6 +12,8 @@ int main(){
 	
 	printf("altura: ");
 	scanf("%f", &altura);
+	
+	sexo = toupper(sexo);
 	
 	switch(sexo){
 	

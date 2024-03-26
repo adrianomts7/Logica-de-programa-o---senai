@@ -4,7 +4,7 @@
 int main(){
 	setlocale(LC_ALL,"");
 	
-	float nota,media,soma;
+	float nota,media,soma = 0;
 	int i;
 	
 	for(i = 1; i <= 2; i++){

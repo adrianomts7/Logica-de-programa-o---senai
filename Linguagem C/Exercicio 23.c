@@ -2,6 +2,7 @@
 #include <locale.h>
 #include <ctype.h>
 #include <locale.h>
+#include <stdlib.h>
 
 int main(){
     setlocale(LC_ALL,"");
@@ -11,17 +12,17 @@ int main(){
     char continuar;
 	
     do{
-        printf("Digite a %i ª Nota: ", contador + 1);
+        printf("Digite a %i Âª Nota: ", contador + 1);
         scanf("%f", &nota);
         soma += nota;
         contador ++;
 		
 		fflush(stdin);
-        printf("Escolha uma opção com base no menu: \n");
+        printf("Escolha uma opÃ§Ã£o com base no menu: \n");
         printf("s = Digitar mais uma nota. \n");
         printf("p = ver quantas notas foram digitadas.\n");
-        printf("n = ver média aritmética. \n");
-        printf("Insira a opção desejada: ");
+        printf("n = ver mÃ©dia aritmÃ©tica. \n");
+        printf("Insira a opÃ§Ã£o desejada: ");
 		scanf("%c", &continuar);
 		continuar = toupper(continuar);
 				
@@ -33,6 +34,6 @@ int main(){
 	
     media = soma / contador;
 
-    printf("A Média: %.1f\n", media);
+    printf("A MÃ©dia: %.1f\n", media);
 
 }

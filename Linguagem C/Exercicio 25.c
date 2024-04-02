@@ -34,7 +34,7 @@ int main(){
    
    printf("Números Pares Digitados: %i\n", contadorPares);
    printf("Números Impares digitados: %i\n", contadorImpares);
-   printf("Media Dos Números Pares: %.2f\n", mediaPares = 0);
+   printf("Media Dos Números Pares: %.2f\n", mediaPares);
    printf("Média Geral: %.2f\n",media);
 
 }

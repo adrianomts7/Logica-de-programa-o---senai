@@ -10,7 +10,7 @@ int main() {
     int pares = 0, impares = 0;
     float mediaGeral, mediaPares;
    
-    printf("Digite um número: ");
+    printf("Digite um nÃºmero: ");
     scanf("%i",&valor);
 	
 	while (valor != 0) {
@@ -20,7 +20,8 @@ int main() {
 			
 			if(valor > maiorValor){
 				maiorValor = valor;
-			}else{
+			}
+			if(valor < menorValor){
 				menorValor = valor;
 			}
 			
@@ -34,12 +35,12 @@ int main() {
                 impares++;
             }
         }        
-            printf("Digite um número: ");
+            printf("Digite um nÃºmero: ");
             scanf("%i",&valor);
     }
    
     if (contadorGeral == 0) {
-        printf("Não foi informado um número positivo.");
+        printf("NÃ£o foi informado um nÃºmero positivo.");
     } else {
         // cast
         // 2 -> 2.0
@@ -47,11 +48,11 @@ int main() {
         mediaPares = somaPares / (float) pares;
        
 		printf("Quantidade de pares: %i \n", pares);
-        printf("Quantidade de ímpares: %i \n", impares);
-        printf("Média geral: %.1f \n", mediaGeral);
-        printf("Média de números pares: %.1f \n", mediaPares);
-        printf("O Maior Número informado: %i\n", maiorValor);
-        printf("O Menor Número informado: %i\n", menorValor);
+        printf("Quantidade de Ã­mpares: %i \n", impares);
+        printf("MÃ©dia geral: %.1f \n", mediaGeral);
+        printf("MÃ©dia de nÃºmeros pares: %.1f \n", mediaPares);
+        printf("O Maior NÃºmero informado: %i\n", maiorValor);
+        printf("O Menor NÃºmero informado: %i\n", menorValor);
     }	
 	return 0;
 }

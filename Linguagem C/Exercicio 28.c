@@ -13,17 +13,17 @@ int main() {
 	
 	 
 	 do{
- 		printf("\nCodÌgo  \tDescriÁ„o:");
+ 		printf("\nCod√≠go  \tDescri√ß√£o:");
 		printf("\n1  \t\tAdicionar Pessoa");	
 		printf("\n2 \t\tExibir Resultados e sair\n");	
-		printf("Digite Qual opÁ„o vocÍ deseja: ");
+		printf("Digite Qual op√ß√£o voc√™ deseja: ");
 		scanf("%i", &opcao);
 		fflush(stdin);
 	
 		switch(opcao){
 			case 1:
 				contadorRespondeu ++;
-				printf("Digite o sal·rio da familia: ");
+				printf("Digite o sal√°rio da familia: ");
 				scanf("%f", &salario);
 				contadorSalario ++;
 				somaSalario += salario;
@@ -37,7 +37,7 @@ int main() {
 					menorSalario = salario;
 				}
 				
-				printf("Digite Quantas pessoas da sua casa È filha da cidade: ");
+				printf("Digite Quantas pessoas da sua casa √© filha da cidade: ");
 				scanf("%i", &filhosCidade);
 				contadorFilhosdaCidade ++;
 				somaFilhosdacidade += filhosCidade;
@@ -45,12 +45,13 @@ int main() {
 				break;
 				
 			case 2:
+				system("cls");
 				printf("Finalizando Cadastro !");
 				sleep(3);
 				break;
 				
 			default:
-				printf("OpÁ„o Invalida!");
+				printf("Op√ß√£o Invalida!");
 				sleep(2);
 				system("cls");
 		}
@@ -66,9 +67,9 @@ int main() {
 	mediafilhos = somaFilhosdacidade / (float) contadorFilhosdaCidade;
 
 	printf("Total de familia que respondeu a pesquisa: %i\n", contadorRespondeu);
-	printf("Media de sal·rio da populaÁ„o: R$ %.2f\n", mediaSalario);
+	printf("Media de sal√°rio da popula√ß√£o: R$ %.2f\n", mediaSalario);
 	printf("Media de Filhos da cidade: %.1f\n", mediafilhos);
-	printf("Maior Sal·rio: %i\n", maiorSalario);
-	printf("Menor Sal·rio: %i\n", menorSalario);
+	printf("Maior Sal√°rio: %i\n", maiorSalario);
+	printf("Menor Sal√°rio: %i\n", menorSalario);
 
 }

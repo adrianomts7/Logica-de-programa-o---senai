@@ -35,7 +35,8 @@ int main() {
 			
 			if(idade > maiorIdadeM){
 				maiorIdadeM = idade;
-			}else{
+			}
+			if(idade < menorIdadeM){
 				menorIdadeM = idade;
 			}
 			
@@ -54,7 +55,8 @@ int main() {
 
             if(idade > maiorIdadeH){
 				maiorIdadeH = idade;
-			}else{
+			}
+			if(idade < maiorIdadeH){
 				menorIdadeH = idade;
 			}
 			

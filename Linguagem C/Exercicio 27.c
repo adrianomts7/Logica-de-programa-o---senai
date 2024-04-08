@@ -13,11 +13,11 @@ int main() {
 	char sexo, opcao;
 	
 	do{
-	printf("\nCodígo  \tDescrição:");
+	printf("\nCodÃ­go  \tDescriÃ§Ã£o:");
 	printf("\n1  \t\tAdicionar Pessoa");	
 	printf("\n2 \t\tExibir Resultados e sair\n");	
 	
-	printf("Digite Qual opção você deseja: ");
+	printf("Digite Qual opÃ§Ã£o vocÃª deseja: ");
 	scanf("%c", &opcao);
 	
 	if(opcao == '1'){
@@ -48,7 +48,7 @@ int main() {
 				menorIdadeM = idade;
 			}
 			
-			printf("Digite O Seu salário: ");
+			printf("Digite O Seu salÃ¡rio: ");
 			scanf("%f", &salario);
 			somaSalMul += salario;
 			
@@ -68,7 +68,7 @@ int main() {
 				menorIdadeH = idade;
 			}
 			
-			printf("Digite O Seu salário: ");
+			printf("Digite O Seu salÃ¡rio: ");
 			scanf("%f", &salario);
 			somaSalMasc += salario;
 		
@@ -96,9 +96,10 @@ int main() {
     printf("Menor idade entre as mulheres: %i anos\n", menorIdadeM);
     printf("Maior idade entre os homens: %i anos\n", maiorIdadeH);
     printf("Menor idade entre os homens: %i anos\n", menorIdadeH);
-    printf("Número de mulheres com salário acima de R$ 5000,00: %i\n", contadorSalarioF);
+    printf("NÃºmero de mulheres com salÃ¡rio acima de R$ 5000,00: %i\n", contadorSalarioF);
 	printf("Maior idade do Grupo %i\n", maiorIdade);
 	printf("Menor idade do Grupo %i\n", menorIdade);
 	printf("Media Salarial Geral: %.1f\n", mediaGeralSalario);
+	
 	return 0;
 }

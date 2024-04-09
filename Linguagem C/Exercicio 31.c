@@ -10,16 +10,16 @@ int main(){
 	float notas[TAM];
 	int i;
 	
-	for(i = 0; i < 3; i++){
-		printf("Digite a %iª Nota: ", i + 1);
+	for(i = 0; i < TAM; i++){
+		printf("Digite a %iÂª Nota: ", i + 1);
 		scanf("%f", &notas[i]);
 		fflush(stdin);
 	}
 	
 	system("cls");
 	
-	for(i = 0; i < 3; i++){
-		printf("A %iª Nota: %.1f\n",i + 1, notas[i]);
+	for(i = 0; i < TAM; i++){
+		printf("A %iÂª Nota: %.1f\n",i + 1, notas[i]);
 	}
 	
 	return 0;

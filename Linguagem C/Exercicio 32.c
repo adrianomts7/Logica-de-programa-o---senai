@@ -13,24 +13,24 @@ int main(){
 	int i;
 	
 	for(i = 0; i < TAM; i++){
-		printf("Digite a %iª Nota: ", i + 1);
+		printf("Digite a %iÂª Nota: ", i + 1);
 		scanf("%f", &notas[i]);
 		soma += notas[i];
 		fflush(stdin);
 	}
 	
 	system("cls");
-	printf("Calculando Média!");
+	printf("Calculando MÃ©dia!");
 	sleep(2);
 	system("cls");
 	
-	media = soma /(float)i;
+	media = soma /i;
 	
 	for(i = 0; i < TAM; i++){
-		printf("A %iª Nota: %.1f\n",i + 1, notas[i]);
+		printf("A %iÂª Nota: %.1f\n",i + 1, notas[i]);
 	}
 	
-	printf("Média: %.1f\n", media);
+	printf("MÃ©dia: %.1f\n", media);
 	
 	return 0;
 }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 
-#define MAX 3
+#define MAX 5
 
 int main(){
 	setlocale(LC_ALL,"");
@@ -9,7 +9,7 @@ int main(){
 	int i,numeros[MAX];
 	
 	for(i = 0; i < MAX; i++){
-		printf("Digite o %iº Valor: ", i + 1);
+		printf("Digite o %iÂº Valor: ", i + 1);
 		scanf("%d", &numeros[i]);
 		fflush(stdin);
 		
@@ -19,7 +19,7 @@ int main(){
 	}
 	
 	for(i = 0; i < MAX; i++){
-		printf("O %iº Valor digitado:%d \n",i + 1,numeros[i]);
+		printf("O %iÂº Valor digitado:%d \n",i + 1,numeros[i]);
 	}
 	
 	return 0;
